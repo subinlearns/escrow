@@ -1,0 +1,20 @@
+{
+  "name": "simple-escrow-hackathon",
+  "version": "1.0.0",
+  "description": "A minimal Ethereum escrow service smart contract for hackathon demos.",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "demo": "hardhat run scripts/demo.js",
+    "deploy:local": "hardhat run scripts/deploy.js",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "create:sepolia": "hardhat run scripts/createDeal.js --network sepolia",
+    "release:sepolia": "hardhat run scripts/releasePayment.js --network sepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.0"
+  }
+}
